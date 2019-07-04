@@ -1,0 +1,59 @@
+<!Doctype Html>
+<html>
+	<head>
+		<title>Calculator</title>
+		<link rel="stylesheet" href="calculator.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+	</head>
+	
+	<body>
+	<div class="container">
+		<form name="calculator" role="application">
+            <table class="tab" align="center">
+               <tr>
+                   <td colspan="4">
+                       <input type="text" name="answer" id="text" disabled><br><br>
+                   </td>
+			   </tr>
+                
+                <tr>
+<td><input type="button" value="7" onClick="calculator.answer.value+='7'"></td>
+<td><input type="button" value="8" onClick="calculator.answer.value+='8'"></td>
+<td><input type="button" value="9" onClick="calculator.answer.value+='9'"></td>
+<td><input type="button" class="operator"  value="+" onClick="calculator.answer.value+='+'"></td>
+                </tr>
+			         <tr>
+<td><input type="button" value="4" onClick="calculator.answer.value+='4'"></td>
+<td><input type="button" value="5" onClick="calculator.answer.value+='5'"></td>
+<td><input type="button" value="6" onClick="calculator.answer.value+='6'"></td>
+<td><input type="button"  class="operator" value="-" onClick="calculator.answer.value+='-'"></td>
+			         </tr>
+                
+			             <tr>
+<td><input type="button" value="1" onClick="calculator.answer.value+='1'"></td>
+<td><input type="button" value="2" onClick="calculator.answer.value+='2'"></td>
+<td><input type="button" value="3" onClick="calculator.answer.value+='3'"></td>
+<td><input type="button" class="operator" value="x" onClick="calculator.answer.value+='*'"></td>
+                        </tr>
+			
+  <tr>
+<td><input type="reset" value="CE"  onClick="reset(calculator.answer.value)" class="cancel"></td>
+ <td><input type="button" value="0" onClick="calculator.answer.value+='0'"></td>
+ <td><input type="button" value="." onClick="calculator.answer.value+='.'"></td>
+ <td><input type="button"  class="operator" value="/" onClick="calculator.answer.value+='/'"></td>
+      
+				</tr>
+			
+			 <tr colspan="4">
+                 
+<td colspan="3"><input type="button" value="=" onClick="calculator.answer.value =eval(calculator.answer.value)" class="equal"></td>
+
+                  <td><input type="button"  class="operator"  value="%"  onClick="calculator.answer.value+='%'"></td>
+			</tr>
+                
+			</table>
+		</form>
+	</div>
+	</body>
+</html>
